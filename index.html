@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="mudarVideo()">
+
+    <section id="section-video">
+
+        <nav id="nav" class="navbar navbar-expand-sm p-2 d-flex flex-column" data-bs-theme="dark">
+            <a href="#" class="navbar-brand m-3" style="font-family: 'Bebas Neue', sans-serif; font-size: 5em; text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);">Travelling</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-center" id="navbar">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Pacotes</a>
+                    <a href="#" class="nav-link">Depoimentos</a>
+                </div>
+            </div>
+        </nav>
+        <video id="video" src="videos/5608053-uhd_3840_2160_30fps.mp4" autoplay muted disablepictureinpicture loop></video>
+        <div id="texto">
+            <h1 class="text-uppercase display-4">Viaje com segurança</h1>
+            <p>Com a Travelling você fica despreocupado na hora de fazer as malas</p>
+        </div>
+    </section>
+
+    <!-- Carrossel -->
+    <section class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="imagens/brasil.jpg">
+                <div class="content">
+                    <div class="author">RIO DE JANEIRO</div>
+                    <div class="title">BRASIL</div>
+                    <div class="des">
+                        O Brasil, localizado na América do Sul, é o maior país da região, conhecido por suas vastas florestas tropicais, como a Amazônia, e suas diversas culturas. A nação é famosa pelo Carnaval vibrante, pela música samba e pelo futebol. Suas cidades principais incluem São Paulo, a maior, e o Rio de Janeiro, com suas icônicas praias e o Cristo Redentor. O Brasil também é conhecido por sua biodiversidade e rica herança cultural, resultante da mistura de influências indígenas, africanas e europeias.
+                    </div>
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/atacama.jpg">
+                <div class="content">
+                    <div class="author">ATACAMA</div>
+                    <div class="title">CHILE</div>
+                    <div class="des">
+                        O Chile é um país estreito e alongado na costa oeste da América do Sul, estendendo-se do deserto de Atacama ao norte até a Patagônia ao sul. Sua geografia diversificada inclui montanhas, desertos, florestas e glaciares. Santiago é a capital e principal centro urbano. O Chile é conhecido por sua vinicultura de alta qualidade e por seus impressionantes parques nacionais, como Torres del Paine. O país também possui uma rica herança cultural que reflete suas origens indígenas e coloniais.
+                    </div>
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/dubai.jpg">
+                <div class="content">
+                    <div class="author">DUBAI</div>
+                    <div class="title">DUBAI</div>
+                    <div class="des">
+                        Dubai, uma das sete emirados dos Emirados Árabes Unidos, é uma cidade globalmente reconhecida por seu desenvolvimento ultramoderno e luxo. Localizada na costa do Golfo Pérsico, Dubai é famosa por seus arranha-céus icônicos, como o Burj Khalifa, e seus complexos turísticos, como o Palm Jumeirah. A cidade é um centro comercial e de turismo internacional, oferecendo atrações como shoppings de luxo, resorts e eventos culturais. A arquitetura futurista e a inovação constante são marcas registradas de Dubai.
+                    </div>
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/franca.jpg">
+                <div class="content">
+                    <div class="author">PARIS</div>
+                    <div class="title">FRANÇA</div>
+                    <div class="des">
+                        A França, localizada na Europa Ocidental, é conhecida por sua rica história, cultura e contribuições significativas às artes e à ciência. Paris, a capital, é famosa pela Torre Eiffel, pelo Museu do Louvre e por sua gastronomia sofisticada. O país oferece uma variedade de paisagens, desde as praias da Riviera Francesa até as vinícolas de Bordeaux e as montanhas dos Alpes. A França é também um centro cultural global, destacando-se na moda, no cinema e na culinária.
+                    </div>
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/japao.jpg">
+                <div class="content">
+                    <div class="author">TÓQUIO</div>
+                    <div class="title">JAPÃO</div>
+                    <div class="des">
+                        O Japão é um arquipélago insular na Ásia Oriental, conhecido por sua fusão única de tradição e modernidade. Tokyo, a capital, é uma metrópole vibrante e tecnologicamente avançada, enquanto Kyoto preserva muitos templos históricos e tradições culturais. O Japão é famoso por sua culinária, como sushi e ramen, e por suas inovações tecnológicas. A cultura japonesa inclui práticas tradicionais como o chá e o ikebana, além de uma rica herança literária e artística. O país também é conhecido por seus desastres naturais, como terremotos e tsunamis.
+                    </div>
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/moscou.jpg">
+                <div class="content">
+                    <div class="author">MOSCOU</div>
+                    <div class="title">RÚSSIA</div>
+                    <div class="des">
+                        A Rússia é o maior país do mundo, estendendo-se por dois continentes, Europa e Ásia. Sua vasta extensão geográfica inclui uma variedade de climas e paisagens, desde as tundras do norte até as estepes do sul. Moscovo, a capital, é um importante centro político e cultural, enquanto São Petersburgo é conhecida por sua arquitetura histórica e canais. A Rússia tem uma rica história literária, artística e científica, mas também enfrenta desafios políticos e econômicos. Sua influência global é significativa devido à sua vasta extensão territorial e recursos naturais.
+                    </div>
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/turquia.jpg">
+                <div class="content">
+                    <div class="author">INSTAMBUL</div>
+                    <div class="title">TURQUIA</div>
+                    <div class="des">
+                        A Turquia, situada entre a Europa e a Ásia, é um país com uma rica herança cultural e histórica. Istambul, a maior cidade, é um ponto de encontro entre o Oriente e o Ocidente, famosa por seus monumentos históricos, como a Hagia Sophia e a Mesquita Azul. A Turquia oferece uma variedade de paisagens, desde praias ao longo da Riviera Turca até as formações rochosas da Capadócia. O país é conhecido por sua culinária diversificada, que mistura influências do Oriente Médio e da região do Mediterrâneo, e por sua significativa herança histórica e cultural.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="imagens/brasil.jpg">
+                <div class="content">
+                    <div class="title">
+                        Brasil
+                    </div>
+                    <div class="description">
+                        América do Sul
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/atacama.jpg">
+                <div class="content">
+                    <div class="title">
+                        Chile
+                    </div>
+                    <div class="description">
+                        América do Sul
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/dubai.jpg">
+                <div class="content">
+                    <div class="title">
+                        Dubai
+                    </div>
+                    <div class="description">
+                        Emirados Árabes Unidos
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/franca.jpg">
+                <div class="content">
+                    <div class="title">
+                        França
+                    </div>
+                    <div class="description">
+                        Europa
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/japao.jpg">
+                <div class="content">
+                    <div class="title">
+                        Japão
+                    </div>
+                    <div class="description">
+                        Ásia
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/moscou.jpg">
+                <div class="content">
+                    <div class="title">
+                        Rússia
+                    </div>
+                    <div class="description">
+                        Europa
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="imagens/turquia.jpg">
+                <div class="content">
+                    <div class="title">
+                        Turquia
+                    </div>
+                    <div class="description">
+                        Oriente médio
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </section>
+
+    <!-- Cards -->
+    <section id="cards" class="container-fluid">
+        <h1 class="my-5 text-center text-uppercase" style="font-size: 4em;">Conheça nossos pacotes de viagem</h1>
+        <div class="row justify-content-evenly">
+            <div class="col-sm-5 col-md-3 g-0 card my-3 mx-md-1">
+                <img src="imagens/bandeiras/alemanha.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Alemanha</h5>
+                    <p>País da europa com uma vasta história e lindas belezas naturais.</p>
+                    <div class="d-flex justify-content-center"><a href="#" class="btn btn-dark">Conheça</a></div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 g-0 card my-3 mx-md-1">
+                <img src="imagens/bandeiras/argentin.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Argentina</h5>
+                    <p>Nossos irmãos da América do Sul. País com clima frio, perfeito pros amantes da neve.</p>
+                    <div class="d-flex justify-content-center"><a href="#" class="btn btn-dark">Conheça</a></div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 g-0 card my-3 mx-md-1">
+                <img src="imagens/bandeiras/canada.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Canadá</h5>
+                    <p>Localizado na América do Norte, é perfeito para quem procura um lugar para morar, com boas escolas e muitas oportunidades de emprego.</p>
+                    <div class="d-flex justify-content-center"><a href="#" class="btn btn-dark">Conheça</a></div>
+                </div>
+            </div>
+            
+            <div class="col-sm-5 col-md-3 g-0 card my-3 mx-md-1">
+                <img src="imagens/bandeiras/eua.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Estados Unidos</h5>
+                    <p>Nem preciso falar, né? O querido das viagens internacionais. EUA.</p>
+                    <div class="d-flex justify-content-center"><a href="#" class="btn btn-dark">Conheça</a></div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 g-0 card my-3 mx-md-1">
+                <img src="imagens/bandeiras/mexico.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">México</h5>
+                    <p>Culinária explêndida, cultura maravilhosa e muita dança. Lugar perfeito para passar o fim de ano e feriados locais.</p>
+                    <div class="d-flex justify-content-center"><a href="#" class="btn btn-dark">Conheça</a></div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 g-0 card my-3 mx-md-1">
+                <img src="imagens/bandeiras/portugal.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Portugal</h5>
+                    <p>Não sabe falar outro idioma e quer visitar algum outro país? Portugal te abriga, é só viajar e conhecer as belezas desse país.</p>
+                    <div class="d-flex justify-content-center"><a href="#" class="btn btn-dark">Conheça</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carossel transporte -->
+    <section id="transporte">
+        <h1 class="text-center text-uppercase mt-5" style="font-size: 5em; color: white;">Decida qual seu meio de transporte <hr> </h1>
+        <div class="lista">
+            <div class="item active">
+                <div class="transporte-img"><img src="imagens/transporte/aviao-removebg-preview.png"></div>
+                <div class="conteudo">
+                    <h2>Avião</h2>
+                    <p>Apesar de não confiarem, é o meio de transporte mais seguro do mundo!</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="transporte-img"><img src="imagens/transporte/carro-removebg-preview.png"></div>
+                <div class="conteudo">
+                    <h2>Carro</h2>
+                    <p>Pra quem gosta de curtir a estrada, fazer paradas e aproveitar a viagem.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="transporte-img" id="onibus"><img src="imagens/transporte/onibus-removebg-preview-FHc-zrZZq-transformed.png"></div>
+                <div class="conteudo">
+                    <h2>Ônibus</h2>
+                    <p>Pra quem gosta de curtir a viagem mas não quer ter a responsabilidade de ficar no volante.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="setas">
+            <button id="transporte-prev"><i class="bi bi-arrow-left"></i></button>
+            <button id="transporte-next"><i class="bi bi-arrow-right"></i></button>
+        </div>
+
+        <div class="indicadores">
+            <div class="number"></div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="row justify-content-evenly align-items-center">
+        <div class="col-lg-3 g-0 card">
+            <img src="imagens/person_icon.png" width="100px" style="border-radius: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Mariana</h5>
+                <p>A Travelling tem me ajudado bastante nos anos em que eu decido viajar. Antes eu precisava ficar de site em site procurando hospedagem, passagens, etc. Agora em um site só tenho o pacote completo!</p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 g-0 card">
+            <img src="imagens/person_icon.png" width="100px" style="border-radius: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Alysson</h5>
+                <p>Não gostei, agora tô gastando muito viajando kkk</p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 g-0 card">
+            <img src="imagens/person_icon.png" width="100px" style="border-radius: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Joana</h5>
+                <p>Sempre que eu vou viajar dou uma passada aqui pra ver se tem um pacote mais em conta com tudo incluso. Obs: sempre tem.</p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="d-flex justify-content-center">
+
+        <div class="row w-50 justify-content-center">
+            <div class="col col-md d-flex flex-column">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </div>
+
+            <div class="col col-md d-flex flex-column">
+                <a href="#">Pacotes</a>
+                <a href="#">Viagens</a>
+                <a href="#">Lugares</a>
+            </div>
+
+            <div class="col col-md d-flex flex-column">
+                <a href="#"><i class="bi bi-instagram me-2"></i>Instagram</a>
+                <a href="#"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        let src = document.getElementById('video').src
+        src = src.slice(22)
+
+        function mudarVideo() {
+            let width = window.innerWidth
+            if (width <= 500) {
+                document.getElementById('video').src = 'videos/5057325-hd_1080_1920_25fps.mp4'
+            }
+            else if (width >= 500 && width <= 800) {
+                document.getElementById('video').src = 'videos/video_cortado_aviao.mp4'
+            }
+            else if (width > 800) {
+                document.getElementById('video').src = src
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
